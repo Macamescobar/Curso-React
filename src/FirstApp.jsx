@@ -6,7 +6,7 @@ export const FirstApp = ({title, subTitle, name}) => {
   return (
     //<> Sínonimo de un fragmento (nodo padre), que es un agrupador de elementos HTML (o jsx)
     <> 
-    <h1>{ title }</h1>
+    <h1 data-testid="test-title">{ title }</h1>
     {/* {<code> {JSON.stringify(newMessage)}</code>} */}
     <p> { subTitle }</p>
     <p> { name }</p>
@@ -20,7 +20,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-  title: 'No hay título',
+  //title: 'No hay título',
   subTitle: 'No hay subtítulo',
   name: 'Macarena',
 }
